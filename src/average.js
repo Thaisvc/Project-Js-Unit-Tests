@@ -11,8 +11,28 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {
-  // adicione seu código aqui
+/* const average = (arrayNumb) => {
+  if (arrayNumb ) {
+    
+  }
+  let soma = 0;
+  let quatidade = arrayNumb.length;
+
+  for (let index = 0; index < arrayNumb.length; index += 1) {
+    soma += arrayNumb[index];
+    
+  }
+  let media = soma / quatidade;
+  let a = Math.round(media);
+
+  return a;
 };
 
-module.exports = average;
+console.log(average([1, 2, 3]));
+
+module.exports = average; */
+
+
+let fruits = ["Apple", "Mango", "Pear", "Peach"];
+console.log(fruits.indexOf("Pear"));
+console.log(fruits.indexOf("Tomato"))
