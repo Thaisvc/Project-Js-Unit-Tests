@@ -11,28 +11,22 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-/* const average = (arrayNumb) => {
-  if (arrayNumb ) {
-    
-  }
+const average = (arrayNumb) => {
   let soma = 0;
   let quatidade = arrayNumb.length;
+  if (arrayNumb.length === 0) return undefined;
+
+  for (let value of arrayNumb) {
+    if (typeof value !== 'number') return undefined;   
+  }  
 
   for (let index = 0; index < arrayNumb.length; index += 1) {
     soma += arrayNumb[index];
-    
   }
-  let media = soma / quatidade;
-  let a = Math.round(media);
 
-  return a;
+  return Math.round(soma / quatidade);
 };
 
-console.log(average([1, 2, 3]));
+console.log(average(['um', 'dois', 'tres']));
 
-module.exports = average; */
-
-
-let fruits = ["Apple", "Mango", "Pear", "Peach"];
-console.log(fruits.indexOf("Pear"));
-console.log(fruits.indexOf("Tomato"))
+module.exports = average; 
